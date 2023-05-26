@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+}
+
+:root {
+    --primary: #ABABAB;
+    --link: #AEC2D2;
+    --light: #FFFFFF;
+    --leftShadow: #40464A;
+    --rightShadow: #1C2023;
+    --backgroud: #2B3034;
+}
+
+body {
+    background-color: #2B3034;
+   
+
+}
+
+header {
+    transition: .5s;
+    width: 100%;
+    position: fixed;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.txt-primiry {
+    color: var(--primary);
+}
+
+.txt-link {
+    color: var(--link);
+}
+
+.txt-white {
+    color: var(--light);
+}
+
+
+.nav-link {
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--light);
+}
+
+.nav-link:active {
+    color: var(--light);
+}
+
+.flex {
+    display: flex;
+}
+
+.gap {
+    gap: 24px;
+}
+
+.grid {
+    display: grid;
+    place-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 100%;
+}
+
+.h-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    /* background: #00000017; */
+    /* border-bottom: 1px solid #ffffff1f; */ 
+    box-shadow: 25px 25px 32px #0000004f;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: none;
+}
+
+.logo img {
+    clip-path: circle();
+    width: 90px;
+}
+
+.links-container {
+    width: 300px;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    padding: 0 30px 0 25px;
+    /* background-image: url(/JEaLiFe·Pictures.jpg); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:top ;
+    background-repeat: no-repeat;
+}
+
+
+.blur {
+    border-radius: 25px;
+    background: rgba(43, 48, 52, 0.46);
+    border: 1px solid #ffffff61;
+    box-shadow: 25px 25px 32px #0000004f;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 50px 0;
+    gap: 50px;
+    max-width: 1024px;
+    width: 100%;
+    height: max-content;
+
+}
+
+.infos-section {
+    /* flex: 1; */
+    padding: 20px;
+    height: max-content;
+    /* width: 400px; */
+}
+.sills-section{
+    flex: 1;
+    padding: 15px;
+    width: 400px;
+}
+.infos{
+    gap: 15;
+}
+.infos .name h1{
+    color: var(--primary);
+}
+
+.infos .me{
+    width: 220px;
+    object-fit: cover;
+    border: 1px solid #ffffff21;
+    border-radius: 100%;
+
+}
+.icons{
+    margin-top: 1rem;
+}
+
+.icons a{
+    transition: all .3s ease-out ;
+    padding: 5px;
+    border-radius: 10px;
+}
+.icons a:hover {
+    box-shadow: 11px 11px 15px #1C2023, -11px -11px 15px #40464A;
+    color: var(--link);
+}
+
+.infos .domains{ 
+    font-weight: 200;
+    text-align: center;
+    color: var(--primary);
+}
+.infos .email{
+    font-weight: 200;
+    color: var(--light);
+}
+
+.btn-cv{
+    margin: 2rem;
+
+}
+.btn-cv a{
+    padding: 1rem 1.2rem;
+    border-radius: 14px;
+    transition:.5s ;
+    box-shadow: 11px 11px 15px #1C2023, -11px -11px 15px #40464A;
+}
+.btn-cv a:hover{
+    background: #384047;
+    box-shadow: inset 11px 11px 15px #1C2023, inset -11px -11px 15px #40464A ;
+}
+
+.sills-section h2{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+
+
+/*/        Responsive//*/
+
+@media only screen and (max-width: 900px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .nav{
+        flex-direction: column;
+        gap: 2px;
+        padding: 10px 25px;
+    }
+    .logo{
+        display: block;
+    }
+    .infos-section , .sills-section{
+        flex: 1;
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
