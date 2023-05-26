@@ -141,7 +141,7 @@ header {
     color: var(--link);
 }
 .icons .txt-link i {
-    font-size: 30;
+    font-size: 35px;
 }
 .txt-white {
     color: var(--light);
@@ -209,7 +209,7 @@ header {
     width: 100%;
     /* background: #00000017; */
     /* border-bottom: 1px solid #ffffff1f; */
-    box-shadow: 5px 0px 50px #0000004f;
+    box-shadow: 5px 0px 50px var(--shadow);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     padding: 35px 20px;
