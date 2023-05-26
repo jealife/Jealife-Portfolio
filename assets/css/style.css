@@ -140,7 +140,9 @@ header {
 .txt-link {
     color: var(--link);
 }
-
+.icons .txt-link i {
+    font-size: 30;
+}
 .txt-white {
     color: var(--light);
 }
