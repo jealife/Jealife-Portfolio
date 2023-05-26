@@ -176,6 +176,9 @@ main {
 .infos{
     gap: 15;
 }
+.name{
+    padding: 10px 0 0 0;
+}
 .infos .name h1{
     color: var(--primary);
 }
