@@ -225,6 +225,7 @@ header {
 .logo img {
     clip-path: circle();
     width: 90px;
+    box-shadow: 9px 9px 10px var(--shadow);
 }
 
 .links-container {
@@ -294,6 +295,7 @@ main {
     object-fit: cover;
     border: 1px solid var(--border-color);
     border-radius: 100%;
+    box-shadow: 5px 5px 20px var(--shadow);
 
 }
 
