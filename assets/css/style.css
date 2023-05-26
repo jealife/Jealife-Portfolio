@@ -48,7 +48,9 @@
     align-items: center;
     gap: 2px;
 }
-
+.btn button{
+    position: fixed;
+}
 .btn i {
     font-size: 24px;
 }
