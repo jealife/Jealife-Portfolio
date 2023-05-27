@@ -66,6 +66,7 @@ input {
     background-color: #ccc;
     display:flex;
     align-items:center;
+    gap:3px;
     transition: background-color 0.2s ease;
   
     &:hover {
