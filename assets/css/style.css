@@ -94,7 +94,7 @@ input {
     display: block;
     position: absolute;
     margin: 0.25rem 0.5rem;
-    content: "🌑";
+    content: " 🌑";
     right: 0;
     color: red;
   }
