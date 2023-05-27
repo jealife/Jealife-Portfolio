@@ -89,6 +89,7 @@ input {
     border-radius: 50%;
     margin: 0.25rem;
     z-index: 9;
+    cursor:pointer;
     will-change: transform;
     transition: transform 0.2s ease;
   }
