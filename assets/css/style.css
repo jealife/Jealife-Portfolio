@@ -17,7 +17,7 @@
     --light:#e6f2fb;
     --leftShadow: #40464A;
     --rightShadow: #1C2023;
-    --backgroud: #2B3034;
+    --background: #2B3034;
     --font-color: #AEC2D2;
     --blur-bg:#2b303475;
     --border-color:#aec2d262;
@@ -28,7 +28,7 @@
     --rightShadow: #BCC4D5;
     --link: #434c5b;
     --leftShadow: #E8F2FF;
-    --backgroud: #D2DBEE;
+    --background: #D2DBEE;
     --leftShadow: #E8F2FF;
     --rightShadow: #BCC4D5;
     --font-color: #31456a;
@@ -67,7 +67,7 @@ input {
     transition: background-color 0.2s ease;
   
     &:hover {
-      background-color: #009ee3;
+      background-color: var(--rightShadow);
   
       &::before {
         color: #fff;
@@ -100,7 +100,7 @@ input {
   }
   
   input:checked {
-    background-color: #004f8b;
+    background-color: var(--backgroud);
   
     &:hover {
       background-color: #009ee3;
@@ -120,14 +120,18 @@ input {
 
 
 
-.icons-white-mode a:hover {
-    box-shadow: inset 9.91px 9.91px 15px #BFC7D9, inset -9.91px -9.91px 15px #E5EFFF;
-}
-
 body {
-    background: var(--backgroud);
+    background: var(--background);
+}
+body::-webkit-scrollbar {
+    width: 0.2rem;
+    background-color: var(--background);
 }
 
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--rightShadow);
+}
 header {
     transition: .5s;
     width: 100%;
