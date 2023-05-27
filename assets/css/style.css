@@ -11,6 +11,7 @@
 
 :root,
 :root.dark {
+    --image-bg:url(/JEaLiFe·Pictures.jpg);
     --primary: #ABABAB;
     --link: #98b7d1;
     --light:#e6f2fb;
@@ -34,6 +35,7 @@
     --blur-bg:#D2DBEE;
     --border-color:#f1f8f862;
     --shadow:#a0a8b274;
+    --image-bg: #D2DBEE;
 }
 
   /* mode switcher */
@@ -236,7 +238,7 @@ header {
 main {
     width: 100%;
     padding: 0 30px 0 25px;
-    background-image: url(/JEaLiFe·Pictures.jpg); 
+    background: var(--image-bg); 
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
