@@ -11,17 +11,17 @@
 
 :root,
 :root.dark {
-    --image-bg:#2B3034;
+    --image-bg: #2B3034;
     --primary: #ABABAB;
     --link: #98b7d1;
-    --light:#e6f2fb;
+    --light: #e6f2fb;
     --leftShadow: #40464A;
     --rightShadow: #1C2023;
     --background: #2B3034;
     --font-color: #AEC2D2;
-    --blur-bg:#2b303475;
-    --border-color:#aec2d262;
-    --shadow:#1717174f;
+    --blur-bg: #2b303475;
+    --border-color: #aec2d262;
+    --shadow: #1717174f;
 }
 
 :root.light {
@@ -32,14 +32,14 @@
     --leftShadow: #E8F2FF;
     --rightShadow: #BCC4D5;
     --font-color: #31456a;
-    --blur-bg:#D2DBEE;
-    --border-color:#f1f8f862;
-    --shadow:#a0a8b274;
+    --blur-bg: #D2DBEE;
+    --border-color: #f1f8f862;
+    --shadow: #a0a8b274;
     --image-bg: #D2DBEE;
 }
 
-  /* mode switcher */
-  .btn {
+/* mode switcher */
+.btn {
     position: fixed;
     bottom: 2.5rem;
     right: 2.5rem;
@@ -50,35 +50,39 @@
     align-items: center;
     gap: 2px;
 }
-.btn button{
+
+.btn button {
     z-index: 99;
     position: absolute;
 }
+
 .btn i {
     font-size: 24px;
 }
+
 input {
     appearance: none;
-    height: 1.55rem;
+    height: 1.60rem;
     width: 3rem;
     border-radius: 1rem;
     position: relative;
     background-color: #ccc;
-    display:flex;
-    align-items:center;
-    gap:3px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: space-between;
     transition: background-color 0.2s ease;
-  
+
     &:hover {
-      background-color: var(--rightShadow);
-  
-      &::before {
-        color: var(--font-color);
-      }
+        background-color: var(--rightShadow);
+
+        &::before {
+            color: var(--font-color);
+        }
     }
-  }
-  
-  input::after {
+}
+
+input::after {
     content: "";
     display: block;
     position: absolute;
@@ -89,44 +93,46 @@ input {
     border-radius: 50%;
     margin: 0.25rem;
     z-index: 9;
-    cursor:pointer;
+    cursor: pointer;
     will-change: transform;
     transition: transform 0.2s ease;
-  }
-  
-  input::before {
+}
+
+input::before {
     display: block;
     position: absolute;
     margin: 0.55rem 0.5rem;
     content: " 🌑";
     right: 0;
     color: red;
-  }
-  
-  input:checked {
+}
+
+input:checked {
     background-color: var(--backgroud);
-  
+
     &:hover {
-      background-color: var(--font-color);
+        background-color: var(--font-color);
     }
-  
+
     &::before {
-      content: "☀";
-      left: 0;
-      color: #fff;
+        content: "☀";
+        left: 0;
+        color: #fff;
     }
-  
+
     &::after {
-      transform: translateX(1.5rem);
+        transform: translateX(1.5rem);
     }
-  }
-  /*  */
+}
+
+/*  */
 
 
 
 body {
     background: var(--background);
 }
+
 body::-webkit-scrollbar {
     width: 0.2rem;
     background-color: var(--background);
@@ -136,6 +142,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background: var(--rightShadow);
 }
+
 header {
     transition: .5s;
     width: 100%;
@@ -150,9 +157,11 @@ header {
 .txt-link {
     color: var(--link);
 }
+
 .icons .txt-link i {
     font-size: 35px;
 }
+
 .txt-white {
     color: var(--light);
 }
@@ -246,7 +255,7 @@ header {
 main {
     width: 100%;
     padding: 0 30px 0 25px;
-    background: var(--image-bg); 
+    background: var(--image-bg);
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
@@ -256,7 +265,7 @@ main {
 
 .blur {
     border-radius: 25px;
-    background:var(--blur-bg) ;
+    background: var(--blur-bg);
     border: 1px solid var(--border-color);
     box-shadow: 25px 25px 32px var(--shadow);
     backdrop-filter: blur(9px);
@@ -336,9 +345,11 @@ main {
     font-weight: 300;
     color: var(--font-color);
 }
-.email a:hover{
+
+.email a:hover {
     color: #d2ecff;
 }
+
 .btn-cv {
     margin: 2rem;
 
@@ -353,7 +364,7 @@ main {
 
 .btn-cv a:hover {
     background: var(--backgroud);
-    box-shadow: inset 11px 11px 15px var(--rightShadow) , inset -11px -11px 15px var(--leftShadow);
+    box-shadow: inset 11px 11px 15px var(--rightShadow), inset -11px -11px 15px var(--leftShadow);
 }
 
 .sills-section h2 {
