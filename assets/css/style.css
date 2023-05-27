@@ -103,7 +103,7 @@ input {
     background-color: var(--backgroud);
   
     &:hover {
-      background-color: #009ee3;
+      background-color: var(--font-color);
     }
   
     &::before {
