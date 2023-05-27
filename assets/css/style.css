@@ -70,7 +70,7 @@ input {
       background-color: var(--rightShadow);
   
       &::before {
-        color: #fff;
+        color: var(--font-color);
       }
     }
   }
