@@ -11,13 +11,13 @@
 
 :root,
 :root.dark {
-    --image-bg: #2B3034;
+    --image-bg: #101818;
     --primary: #ABABAB;
     --link: #98b7d1;
     --light: #e6f2fb;
-    --leftShadow: #40464A;
-    --rightShadow: #1C2023;
-    --background: #2B3034;
+    --leftShadow: #252E32;
+    --rightShadow: #141C1D;
+    --background: #fff;
     --font-color: #AEC2D2;
     --blur-bg: #2b303475;
     --border-color: #aec2d262;
