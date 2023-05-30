@@ -291,7 +291,7 @@ main {
     /* width: 400px; */
 }
 
-.sills-section {
+.skills-section {
     flex: 1;
     padding: 15px;
     width: 400px;
@@ -367,12 +367,41 @@ main {
     box-shadow: inset 11px 11px 15px var(--rightShadow), inset -11px -11px 15px var(--leftShadow);
 }
 
-.sills-section h2 {
+.skills-section h2 {
     font-weight: 300;
     font-size: 1rem;
 }
 
+/* Skills cards */
+.card {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+}
 
+.skills-conatiner .card {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .skills-conatiner .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 /*/        Responsive//*/
 
@@ -392,7 +421,7 @@ main {
     }
 
     .infos-section,
-    .sills-section {
+    .skills-section {
         flex: 1;
         width: 100%;
         padding: 10px;
