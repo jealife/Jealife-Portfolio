@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,17 +11,19 @@
 
 :root,
 :root.dark {
-    --image-bg: #101818;
+    --image-bg: #101518;
     --primary: #ABABAB;
     --link: #98b7d1;
     --light: #e6f2fb;
-    --leftShadow: #252E32;
-    --rightShadow: #141C1D;
+    /* --leftShadow: #252E32; */
+    --leftShadow: #1a2226;
+    --rightShadow: #0a0d0f;
     --background: #fff;
     --font-color: #AEC2D2;
-    --blur-bg: #2b303475;
+    --blur-bg: #272c2f87;
+    --blur-bg: #101518;
     --border-color: #aec2d262;
-    --shadow: #1717174f;
+    --shadow: #0000004f;
 }
 
 :root.light {
@@ -66,15 +68,15 @@ input {
     width: 3rem;
     border-radius: 1rem;
     position: relative;
-    background-color: #ccc;
+    background-color: var(--font-color);
     display: flex;
     align-items: center;
-    gap: 3px;
+    /* gap: 5px; */
     justify-content: space-between;
     transition: background-color 0.2s ease;
 
     &:hover {
-        background-color: var(--rightShadow);
+        background-color: var(--font-color);
 
         &::before {
             color: var(--font-color);
@@ -104,11 +106,11 @@ input::before {
     margin: 0.55rem 0.5rem;
     content: " 🌑";
     right: 0;
-    color: red;
+    color: #313843;
 }
 
 input:checked {
-    background-color: var(--backgroud);
+    background-color: var(--font-color);
 
     &:hover {
         background-color: var(--font-color);
@@ -117,7 +119,8 @@ input:checked {
     &::before {
         content: "☀";
         left: 0;
-        color: #fff;
+        font-size: 18px;
+        color: hwb(43 28% 0%);
     }
 
     &::after {
@@ -310,11 +313,17 @@ main {
 }
 
 .infos .me {
+    margin-top: 0.5rem;
     width: 220px;
     object-fit: cover;
     border: 1px solid var(--border-color);
     border-radius: 100%;
-    box-shadow: 5px 5px 20px var(--shadow);
+    transition: all 0.5s ease ;
+
+}
+.me:hover{
+    scale: 1.05;
+    box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
 
 }
 
@@ -366,32 +375,81 @@ main {
     background: var(--backgroud);
     box-shadow: inset 11px 11px 15px var(--rightShadow), inset -11px -11px 15px var(--leftShadow);
 }
-
+.skills-section {
+    height: 600px;
+}
 .skills-section h2 {
     font-weight: 300;
     font-size: 1rem;
+    display: block;
+    
 }
 
-/* Skills cards */
-.card {
-    background-color: dodgerblue;
-    color: white;
-    padding: 1rem;
-    height: 4rem;
-}
+/* Skills  */
 
-.skills-conatiner .card {
-    background-color: dodgerblue;
-    color: white;
-    padding: 1rem;
-    height: 4rem;
-    max-width: 900px;
-    margin: 0 auto;
-    display: grid;
+.skills-bar-title{
+    position: absolute;
+    background: var(--blur-bg);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #33333333;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    z-index: 2;
+}
+.skills{
+    width: 600px;
+    margin: 20px auto  15px;
+    border-radius: 25px;
+    display: flex;
     gap: 1rem;
+    align-items: center;
+    height: 100%;
+    
+}
+.card {
+    border: 1px solid #5a5a5a25;
+    color: var(--font-color);
+    width: 300px;
+    height: 300px;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background-color: var(--blur-bg);
+    border-radius: 25px 25px 0 25px;
+    transition: all 0.55s ease;
 }
 
-@media (min-width: 600px) {
+.card:hover {
+
+    box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
+
+}
+
+
+
+
+.card-btn {
+    justify-content: end;
+}
+
+.icon i {
+    font-size: 50px;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* @media (min-width: 600px) {
     .skills-conatiner .cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -401,7 +459,7 @@ main {
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 
 /*/        Responsive//*/
 
@@ -425,6 +483,18 @@ main {
         flex: 1;
         width: 100%;
         padding: 10px;
+    }
+    /* .card{
+        width: 95%;
+    } */
+    .skills{
+        flex-wrap: wrap;
+        gap: 25px;
+        width: 100%;
+        margin: 75px auto  15px;
+        padding: 0 .5rem;
+        align-items: center;
+        justify-content: center;
     }
 
 }

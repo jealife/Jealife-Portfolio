@@ -30,6 +30,7 @@
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="white">
@@ -83,17 +84,45 @@
                     </div>
 
                 </div>
-                <div class="skills-section blur container-flex-column">
-                    <div class="skills">
+                <div class="skills-section blur">
+                    <div class="skills-bar-title">
                         <h2 class="txt-link">Compétences</h2>
-                        <div class="skills-conatiner">
-                            <div class="card">ONE</div>
-                            <div class="card">TWO</div>
-                            <div class="card">THREE</div>
-                            <div class="card">FOUR</div>
-                            <div class="card">FIVE</div>
-                            <div class="card">SIX</div>
+                    </div>
+                    <div class="skills">
+                        <div class="card flex flex-column two" data-aos="zoom-in-up" data-aos-delay="200"
+                            data-aos-duration="800" data-aos-easing="ease-in-out">
+                            <div class="top-card">
+                                <div class="icon">
+                                    <i class='bx bx-code-curly'></i>
+                                </div>
+                                <div class="card-title">
+                                    <h2 class="uppercase">Web</h2>
+                                </div>
+                                <div class="card-description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="card flex flex-column" data-aos="zoom-in-up" data-aos-delay="300"
+                            data-aos-duration="800" data-aos-easing="ease-in-out">
+                            <div class="top-card">
+                                <div class="icon">
+                                    <i class='bx bxs-camera'></i>
+                                </div>
+
+                                <div class="card-title">
+                                    <h2 class="uppercase">Photogrphy</h2>
+                                </div>
+                                <div class="card-description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -132,7 +161,10 @@
 
     </script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
