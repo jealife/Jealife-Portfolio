@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -43,7 +43,7 @@
 /* mode switcher */
 .btn {
     position: fixed;
-    bottom: 2.5rem;
+    top: 1rem;
     right: 2.5rem;
     background: transparent;
     border: none;
@@ -51,10 +51,11 @@
     display: flex;
     align-items: center;
     gap: 2px;
+    z-index: 9999;
 }
 
 .btn button {
-    z-index: 99;
+    z-index: 9999;
     position: absolute;
 }
 
@@ -137,7 +138,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.2rem;
+    width: 0.4rem;
     background-color: var(--background);
 }
 
@@ -217,13 +218,13 @@ header {
     width: 100%;
 }
 
-.h-full {
+/* .h-full {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .nav {
     position: fixed;
@@ -234,7 +235,7 @@ header {
     box-shadow: 5px 0px 50px var(--shadow);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    padding: 30px 20px 25px 20px;
+    padding: 15px 20px 18px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,12 +258,17 @@ header {
 
 main {
     width: 100%;
-    padding: 0 30px 0 25px;
+    padding: 10px 30px 0 25px;
     background: var(--image-bg);
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-position: top; */
+    /* background-repeat: no-repeat; */
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -278,7 +284,7 @@ main {
 .main-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 50px 0;
     gap: 50px;
     max-width: 1024px;
@@ -310,18 +316,19 @@ main {
 
 .infos .name h1 {
     color: var(--font-color);
+    font-size: 26px;
 }
 
 .infos .me {
     margin-top: 0.5rem;
-    width: 220px;
     object-fit: cover;
     border: 1px solid var(--border-color);
     border-radius: 100%;
-    transition: all 0.5s ease ;
+    transition: all 0.5s ease;
 
 }
-.me:hover{
+
+.me:hover {
     scale: 1.05;
     box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
 
@@ -375,26 +382,27 @@ main {
     background: var(--backgroud);
     box-shadow: inset 11px 11px 15px var(--rightShadow), inset -11px -11px 15px var(--leftShadow);
 }
+
 .skills-section {
-    height: 600px;
+    height: auto;
 }
+
 .skills-section h2 {
     font-weight: 300;
     font-size: 1rem;
     display: block;
-    
+
 }
 
 /* Skills  */
 
-.skills-bar-title{
-    position: absolute;
+.skills-bar-title {
     background: var(--blur-bg);
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(9px);
     top: 0px;
     width: 100%;
-    height: 70px;
+    height: 65px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -405,23 +413,28 @@ main {
     text-align: center;
     z-index: 2;
 }
-.skills{
+
+.skills {
+    position: relative;
     width: 600px;
-    margin: 20px auto  15px;
+    margin: 50px auto 15px;
     border-radius: 25px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
     align-items: center;
-    height: 100%;
-    
+    /* height: 100%; */
+
 }
+
 .card {
     border: 1px solid #5a5a5a25;
     color: var(--font-color);
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem;
     background-color: var(--blur-bg);
     border-radius: 25px 25px 0 25px;
     transition: all 0.55s ease;
@@ -441,7 +454,7 @@ main {
 }
 
 .icon i {
-    font-size: 50px;
+    font-size: 36px;
 }
 
 .top-card {
@@ -449,6 +462,33 @@ main {
     flex-direction: column;
     gap: 10px;
 }
+.skills-level {
+    text-align:center ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.progress-container{
+    width: 150px;
+}
+.progress-container p{
+    font-size: 12px;
+}
+.progress-bar {
+    box-sizing: content-box;
+    height: 5px;
+    background: #2f333a;
+    border-radius: 25px;
+    padding: 1px;
+  }
+  .progress-bar > span {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #69a3aa;
+    overflow: hidden;
+  }
+
 /* @media (min-width: 600px) {
     .skills-conatiner .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -464,12 +504,24 @@ main {
 /*/        Responsive//*/
 
 @media only screen and (max-width: 900px) {
+    .btn {
+        position: fixed;
+        top: 90%;
+        right: 2.5rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
     .main-container {
         flex-direction: column;
     }
 
     .nav {
-        flex-direction: column;
+        /* flex-direction: column; */
+        justify-content: space-between;
         gap: 2px;
         padding: 10px 25px;
     }
@@ -484,17 +536,49 @@ main {
         width: 100%;
         padding: 10px;
     }
+
     /* .card{
         width: 95%;
     } */
-    .skills{
+    .skills {
         flex-wrap: wrap;
         gap: 25px;
         width: 100%;
-        margin: 75px auto  15px;
+        margin: 75px auto 15px;
         padding: 0 .5rem;
         align-items: center;
         justify-content: center;
+    }
+
+    .skills-bar-title {
+        position: absolute;
+        background: var(--blur-bg);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        top: 0px;
+        width: 100%;
+        height: 70px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #33333333;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .card {
+        border: 1px solid #5a5a5a25;
+        color: var(--font-color);
+        width: 100%;
+        height: 300px;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        background-color: var(--blur-bg);
+        border-radius: 25px 25px 0 25px;
+        transition: all 0.55s ease;
     }
 
 }
