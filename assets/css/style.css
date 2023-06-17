@@ -260,7 +260,7 @@ header {
 
 main {
     width: 100%;
-    padding: 10px 30px 0 25px;
+    padding: 10px 15px;
     background: var(--image-bg);
     min-height: 100dvh;
     display: grid;
@@ -525,7 +525,7 @@ main {
 
     .main-container {
         flex-direction: column;
-        margin-top: 3.2rem;
+        margin-top: 2rem;
     }
 
     .nav {
