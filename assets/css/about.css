@@ -17,6 +17,8 @@
 .about-section h2 {
   color: var(--font-color);
   margin-bottom: 1.2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .infos,
@@ -25,10 +27,12 @@
 }
 
 .title {
-  font-weight: 400;
-  margin: 1rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
   border-bottom: 1px solid #33333333;
   text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
   color: var(--font-color);
 }
 
@@ -132,6 +136,7 @@
   background-color: var(--blur-bg);
   box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
 }
+
 
 
 
