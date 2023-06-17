@@ -286,7 +286,7 @@ main {
 .main-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     padding: 50px 0;
     gap: 50px;
     max-width: 1024px;
@@ -419,9 +419,9 @@ main {
 .skills {
     position: relative;
     width: 600px;
-    margin: 35px auto 15px;
+    margin: 35px auto;
     border-radius: 25px;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
@@ -516,7 +516,7 @@ main {
 
 
 
-/*/        Responsive//*/
+/*/              Responsive //*/
 
 @media only screen and (max-width: 900px) {
     .btn {
@@ -533,13 +533,14 @@ main {
 
     .main-container {
         flex-direction: column;
+        margin-top: 3.2rem;
     }
 
     .nav {
         /* flex-direction: column; */
         justify-content: space-between;
         gap: 2px;
-        padding: 10px 25px;
+        padding: 10px 25px 9px 25px ;
     }
 
     .logo {
@@ -557,10 +558,9 @@ main {
         width: 95%;
     } */
     .skills {
-        flex-wrap: wrap;
         gap: 25px;
         width: 100%;
-        margin: 35px auto 15px;
+        margin: 30px auto 15px;
         padding: 0 .5rem;
         align-items: center;
         justify-content: center;
