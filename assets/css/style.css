@@ -213,7 +213,9 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+.uppercase{
+    font-weight: 600;
+}
 .full {
     width: 100%;
 }
@@ -302,7 +304,7 @@ main {
 
 .skills-section {
     flex: 1;
-    padding: 15px;
+    /* padding: 15px; */
     width: 400px;
 }
 
@@ -388,7 +390,7 @@ main {
 }
 
 .skills-section h2 {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1rem;
     display: block;
 
@@ -417,12 +419,12 @@ main {
 .skills {
     position: relative;
     width: 600px;
-    margin: 50px auto 15px;
+    margin: 35px auto 15px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
     /* height: 100%; */
 
@@ -433,8 +435,8 @@ main {
     color: var(--font-color);
     width: 100%;
     height: auto;
-    justify-content: space-between;
-    padding: 1.5rem 1rem;
+    justify-content: center;
+    padding: 1rem 1rem;
     background-color: var(--blur-bg);
     border-radius: 25px 25px 0 25px;
     text-align: center;
@@ -461,18 +463,18 @@ main {
 .top-card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap:20px;
 }
 
 .skills-level-web {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     width: 100%;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     place-items: center;
 }
 
@@ -485,7 +487,7 @@ main {
     grid-row-gap: 24px;
     width: 100%;
     place-items: center;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .progress-container {
@@ -512,17 +514,7 @@ main {
     overflow: hidden;
 }
 
-/* @media (min-width: 600px) {
-    .skills-conatiner .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (min-width: 900px) {
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
 
 /*/        Responsive//*/
 
@@ -587,7 +579,7 @@ main {
         border: 1px solid #5a5a5a25;
         color: var(--font-color);
         width: 100%;
-        height: 300px;
+        height: max-content;
         justify-content: space-between;
         padding: 1.5rem 1rem;
         background-color: var(--blur-bg);
@@ -597,29 +589,32 @@ main {
     }
     .skills-level-web {
         text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
+        display: flex;
+        justify-content: center;
+        font-size: clamp(4vw, min(8vh, 6em),
+        max(10vw, 10em));
+        flex-wrap: wrap;
+        gap: 25px;
+        gap: 24px;
         width: 100%;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     
     .skills-level-photo {
         text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
+        display: flex;
+        justify-content: center;
+        font-size: clamp(4vw, min(8vh, 6em),
+        max(10vw, 10em));
+        flex-wrap: wrap;
+        gap: 25px;
+        gap: 24px;
         width: 100%;
-        place-items: center;
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .progress-container {
-        width: 155px;
+        width: 100%;
     }
 
 }
