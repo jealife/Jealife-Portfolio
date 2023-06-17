@@ -1,0 +1,16 @@
+
+.infos-section-home, .skills-section {
+
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 900px){
+
+    .infos-section-home{
+
+        margin-top: 65px;
+    }
+    .skills-section{
+        margin-top: 0;
+    }
+}

@@ -213,9 +213,11 @@ header {
     justify-content: center;
     align-items: center;
 }
-.uppercase{
+
+.uppercase {
     font-weight: 600;
 }
+
 .full {
     width: 100%;
 }
@@ -280,8 +282,6 @@ main {
 .main-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.2rem;
-    /* padding: 50px 0; */
     gap: 50px;
     max-width: 1024px;
     width: 100%;
@@ -455,7 +455,7 @@ main {
 .top-card {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
 
 .skills-level-web {
@@ -509,6 +509,15 @@ main {
 
 
 /*/              Responsive //*/
+@media only screen and (min-width: 900px) {
+    .main-container {
+
+        margin-top: 1.2rem;
+    }
+    .about-section{
+        margin-top: 50px;
+    }
+}
 
 @media only screen and (max-width: 900px) {
     .btn {
@@ -525,14 +534,14 @@ main {
 
     .main-container {
         flex-direction: column;
-        margin-top: 2rem;
+        padding: 65px 0 0 0;
     }
 
     .nav {
-        /* flex-direction: column; */
+        flex-direction: column;
         justify-content: space-between;
         gap: 2px;
-        padding: 10px 25px 9px 25px ;
+        padding: 10px 25px 9px 25px;
     }
 
     .logo {
@@ -579,25 +588,26 @@ main {
         text-align: center;
         align-items: center;
     }
+
     .skills-level-web {
         text-align: center;
         display: flex;
         justify-content: center;
         font-size: clamp(4vw, min(8vh, 6em),
-        max(10vw, 10em));
+                max(10vw, 10em));
         flex-wrap: wrap;
         gap: 25px;
         gap: 24px;
         width: 100%;
         padding-left: 10px;
     }
-    
+
     .skills-level-photo {
         text-align: center;
         display: flex;
         justify-content: center;
         font-size: clamp(4vw, min(8vh, 6em),
-        max(10vw, 10em));
+                max(10vw, 10em));
         flex-wrap: wrap;
         gap: 25px;
         gap: 24px;

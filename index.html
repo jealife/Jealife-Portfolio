@@ -31,7 +31,7 @@
   gtag('config', 'G-J2HYCCDD46');
 </script>
     <link rel='icon' type='image/png' href='desktop.png'>
-    <title>JEaLiFe Portfolio</title>
+    <title id="title">JEaLiFe Portfolio</title>
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -42,8 +42,9 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <link rel="stylesheet" href="../assets/css/about.css"> -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/style.css">    
+    <link rel="stylesheet" href="assets/css/home.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -51,7 +52,7 @@
     <header>
         <div class="nav">
             <div class="logo">
-                <img src="assets/images/JEaLiFe·Pictures.jpg" alt="">
+                <img src="assets/images/JEaLiFe·Pictures.jpg" alt="Image icon" >
             </div>
             <div class="links-container container-flex space-between">
                 <a href="#Accueil" id="Accueil" class="txt-link nav-link">Accueil</a>
@@ -64,7 +65,7 @@
         <!-- <div class="h-full"> -->
             <div class="main-container " id="main-container">
                 <div class="infos-section blur">
-                    <div class="infos container container-flex-column">
+                    <div class="infos  container-flex-column">
                         <img class="me" src="assets/images/JEaLiFe·.jpg" width="185px" height="185px" alt="jean Guylane Memiaghe">
                         <div class="name">
                             <h1>JEaLiFe</h1>
@@ -260,6 +261,8 @@
   
         $("#Accueil").click(function () {
           $(".main-container").load("view/home.html")
+          //$("#infos-section-home").css("margin-top", "15px");
+          $("#title").text("JEaLiFe Portfolio");
           $("#about").css("color", "var(--link)");
           $(this).css("color", "white");
           $(this).css("transition", "0.5s");
