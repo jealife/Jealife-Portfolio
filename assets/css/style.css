@@ -342,7 +342,7 @@ main {
 
 .icons a:hover {
     box-shadow: 11px 11px 15px var(--rightShadow), -11px -11px 15px var(--leftShadow);
-    color: var(--link);
+    color: var(--font-color);
 }
 
 .infos .domains {
