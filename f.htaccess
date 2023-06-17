@@ -1,0 +1,13 @@
+<ifmodule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteBase /JEaLiFe/
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} !^ https://jea-portfolio.vercel.app/view/about.html$ [NC]
+    RewriteRule ^(.*)$  https://jea-portfolio.vercel.app/#about$1 [L,R=301]
+</ifmodule>
