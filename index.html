@@ -32,6 +32,10 @@
 </script>
     <link rel='icon' type='image/png' href='desktop.png'>
     <title>JEaLiFe Portfolio</title>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -56,11 +60,11 @@
         </div>
     </header>
     <main>
-        <div class="h-full">
+        <!-- <div class="h-full"> -->
             <div class="main-container ">
                 <div class="infos-section blur">
                     <div class="infos container container-flex-column">
-                        <img class="me" src="assets/images/JEaLiFe·.jpg" alt="jean Guylane Memiaghe">
+                        <img class="me" src="assets/images/JEaLiFe·.jpg" width="185px" height="185px" alt="jean Guylane Memiaghe">
                         <div class="name">
                             <h1>JEaLiFe</h1>
                         </div>
@@ -86,7 +90,7 @@
                                 href="mailto:jealife.pictures@gmail.com">Jealife.pictures@gmail.com</a>
                         </span>
                         <div class="btn-cv">
-                            <a href="assets/images/JEaLiFe·.jpg" target="_blank" rel="noopener noreferrer"
+                            <a href="assets/images/JEaLiFe·.jpg"  download target="_blank" rel="noopener noreferrer"
                                 class="txt-link">Télécharger mon CV
                             </a>
                         </div>
@@ -98,7 +102,7 @@
                         <h2 class="txt-link">Compétences</h2>
                     </div>
                     <div class="skills">
-                        <div class="card flex flex-column two" data-aos="zoom-in-up" data-aos-delay="200"
+                        <div class="card flex  two" data-aos="zoom-in-up" data-aos-delay="200"
                             data-aos-duration="800" data-aos-easing="ease-in-out">
                             <div class="top-card">
                                 <div class="icon">
@@ -108,9 +112,46 @@
                                     <h2 class="uppercase">Web</h2>
                                 </div>
                                 <div class="card-description">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </p>
+                                    <div class="skills-level">
+                                        <div class="progress-container">
+                                            <p>HTML</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 65%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>CSS</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 65%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>JAVA</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 30%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>PHP</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 15%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>DART</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 25%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>JS</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 20%"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -125,9 +166,44 @@
                                     <h2 class="uppercase">Photogrphy</h2>
                                 </div>
                                 <div class="card-description">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </p>
+                                    <div class="skills-level">
+                                        <div class="progress-container">
+                                            <p>Adobe Express</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 65%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>Photoshop</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 65%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>Lightroom</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 30%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>PHP</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 15%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>DART</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 25%"></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <p>JS</p>
+                                            <div class="progress-bar">
+                                                <span style="width: 20%"></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +213,7 @@
 
             </div>
 
-        </div>
+        <!-- </div> -->
 
     </main>
     <div class="btn-white-mode">
@@ -173,6 +249,40 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+      $(document).ready(function () {
+
+        //page par défaut
+        $(".testimonial").load("temoignage.html")
+        $(".footer").load("footer.html")
+
+
+        $("#photos").click(function () {
+          $(".grid-wrapper").load("photos.html");
+          $("#web-site").css("color", "white");
+          $("#logos").css("color", "white");
+          $(this).css("color", "aqua");
+          $(this).css("transition", "0.5s");
+  
+        });
+  
+  
+        $("#web-site").click(function () {
+          $(".nav-bar").load("navBar.html")
+  
+          $(".grid-wrapper").load("webSite.html");
+          $(this).css("color", "aqua");
+          $(this).css("transition", "0.5s");
+        });
+  
+        $("#logos").click(function () {
+          $(".grid-wrapper").load("logos.html");
+          $(this).css("color", "aqua");
+          $(this).css("transition", "0.5s");
+        });
+  
+      });
     </script>
 </body>
 
