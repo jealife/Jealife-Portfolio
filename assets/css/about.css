@@ -4,18 +4,9 @@
     scroll-snap-type:  y mandatory;
 } */
 
-.main-container {
-    display: flex;
+/* .main-container {
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 1rem;
-    padding: 50px 0;
-    gap: 50px;
-    max-width: 1024px;
-    width: 100%;
-    height: max-content;
-
-}
+} */
 .infos-section {
     display: flex;
     justify-content: space-around;

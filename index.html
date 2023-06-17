@@ -42,6 +42,7 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="../assets/css/about.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -53,15 +54,15 @@
                 <img src="assets/images/JEaLiFe·Pictures.jpg" alt="">
             </div>
             <div class="links-container container-flex space-between">
-                <a href="#" class="txt-link nav-link">Accueil</a>
+                <a href="#Accueil" id="Accueil" class="txt-link nav-link">Accueil</a>
                 <a href="#" class="txt-link nav-link">Réalisations</a>
-                <a href="view/about.html" class="txt-link nav-link">A propos</a>
+                <a href="#about" id="about" class="txt-link nav-link">A propos</a>
             </div>
         </div>
     </header>
     <main>
         <!-- <div class="h-full"> -->
-            <div class="main-container ">
+            <div class="main-container " id="main-container">
                 <div class="infos-section blur">
                     <div class="infos container container-flex-column">
                         <img class="me" src="assets/images/JEaLiFe·.jpg" width="185px" height="185px" alt="jean Guylane Memiaghe">
@@ -239,27 +240,28 @@
     </script>
     <script>
       $(document).ready(function () {
-
+        
         //page par défaut
-        $(".testimonial").load("temoignage.html")
-        $(".footer").load("footer.html")
+        $(".main-container").load("view/home.html")
+       //$(".footer").load("footer.html")
 
 
-        $("#photos").click(function () {
-          $(".grid-wrapper").load("photos.html");
+        $("#about").click(function () {
+          $(".main-container").load("view/about.html");
+            $("#title").text("JEaLiFe | A propos");
           $("#web-site").css("color", "white");
-          $("#logos").css("color", "white");
-          $(this).css("color", "aqua");
+          
+          $("#Accueil").css("color", "var(--link)");
+          $(this).css("color", "white");
           $(this).css("transition", "0.5s");
   
         });
   
   
-        $("#web-site").click(function () {
-          $(".nav-bar").load("navBar.html")
-  
-          $(".grid-wrapper").load("webSite.html");
-          $(this).css("color", "aqua");
+        $("#Accueil").click(function () {
+          $(".main-container").load("view/home.html")
+          $("#about").css("color", "var(--link)");
+          $(this).css("color", "white");
           $(this).css("transition", "0.5s");
         });
   

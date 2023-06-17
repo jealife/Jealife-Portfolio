@@ -34,7 +34,7 @@
   </head>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="nav">
             <div class="logo">
                 <img src="../assets/images/JEaLiFe·Pictures.jpg" alt="">
@@ -45,10 +45,11 @@
                 <a href="#" class="txt-link nav-link">A propos</a>
             </div>
         </div>
-    </header>
+    </header> -->
     <main>
-        <div class="main-container">
-            <div class="infos-section blur">
+        <div class="main-container" style="flex-direction: column;">
+            <div class="infos-section blur " data-aos="zoom-in-up" data-aos-delay="300"
+            data-aos-duration="800" data-aos-easing="ease-in-out" style="margin-top: 50px;">
                 <div class="infos  container-flex-column">
                     <img class="me" src="../assets/images/JEaLiFe·.jpg" width="185px" height="185px" alt="jean Guylane Memiaghe">
                     <div class="name">
@@ -93,32 +94,38 @@
                 </div>
 
             </div>
+
+
             <div class="exerience blur">
                 <div class="max experience">
                     <h2 class="title">
                         Exprériences
                     </h2>
                     <div class="timeline">
-                        <div class="container left">
-                          <div class="content">
+                        <div class="container left" data-aos="zoom-in-left" data-aos-delay="300"
+                        data-aos-duration="800" data-aos-easing="ease-in-out">
+                          <div class="content" >
                             <h2>2023</h2>
                             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
                           </div>
                         </div>
-                        <div class="container right">
+                        <div class="container right" data-aos="zoom-in-right" data-aos-delay="300"
+                        data-aos-duration="800" data-aos-easing="ease-in-out">
                           <div class="content">
                             <h2>2022</h2>
                             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
                           </div>
                         </div>
-                        <div class="container left">
-                            <div class="content">
+                        <div class="container left" data-aos="zoom-in-left" data-aos-delay="300"
+                        data-aos-duration="800" data-aos-easing="ease-in-out">
+                            <div class="content" >
                               <h2>2023</h2>
                               <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
                             </div>
                           </div>
-                          <div class="container right">
-                            <div class="content">
+                          <div class="container right"data-aos="zoom-in-right" data-aos-delay="300"
+                          data-aos-duration="800" data-aos-easing="ease-in-out">
+                            <div class="content"  >
                               <h2>2022</h2>
                               <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
                             </div>
@@ -132,36 +139,6 @@
     </main>
 
 
-
-    <div class="btn-white-mode">
-        <button class="btn" onclick="onchange()">
-            <input type="checkbox" id="mode" class="form-check-input">
-            <!--             <i class='bx bxs-adjust-alt' style='color:#fffcfc'> -->
-            </i>
-        </button>
-
-    </div>
-
-
-
-
-    <!-- scripts  -->
-    <script>
-        const modeBtn = document.getElementById('mode');
-        modeBtn.onchange = (e) => {
-            if (modeBtn.checked === true) {
-                document.documentElement.classList.remove("dark")
-                document.documentElement.classList.add("light")
-                window.localStorage.setItem('mode', 'light');
-            } else {
-                document.documentElement.classList.remove("light")
-                document.documentElement.classList.add("dark")
-                window.localStorage.setItem('mode', 'dark');
-
-            }
-        }
-
-    </script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

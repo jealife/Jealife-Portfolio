@@ -260,7 +260,7 @@ header {
 
 main {
     width: 100%;
-    padding: 10px 15px;
+    padding: 0 15px 15px 15px;
     background: var(--image-bg);
     min-height: 100dvh;
     display: grid;
@@ -281,7 +281,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 1.2rem;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     gap: 50px;
     max-width: 1024px;
     width: 100%;
