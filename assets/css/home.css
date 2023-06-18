@@ -1,5 +1,5 @@
 
-.infos-section-home, .skills-section {
+.infos-section-home, .services-section {
 
     margin-top: 50px;
 }
@@ -10,7 +10,7 @@
 
         margin-top: 65px;
     }
-    .skills-section{
+    .services-section{
         margin-top: 0;
     }
 }
