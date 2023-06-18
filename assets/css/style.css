@@ -262,7 +262,7 @@ header {
 
 main {
     width: 100%;
-    padding: 0 15px 15px 15px;
+    padding: 0  ;
     background: var(--image-bg);
     min-height: 100dvh;
     display: grid;
@@ -544,6 +544,7 @@ main {
     .main-container {
         flex-direction: column;
         padding: 65px 0 0 0;
+        width: 100%;
     }
 
     .nav {
@@ -561,7 +562,7 @@ main {
     .skills-section, .services-section {
         flex: 1;
         width: 100%;
-        padding: 10px;
+        padding: 10px 5px;
     }
 
     /* .card{
