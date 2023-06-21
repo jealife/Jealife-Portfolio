@@ -1,329 +1,234 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta property="og:title" content="TiremT">
+        <meta property="og:title" content=" JEaLiFe's Portfolio">
         <!-- Meta description -->
-        <meta name="description"
-            content="TiremT est un restaurant en ligne qui propose des plats à base de produits 100% Bio et de conseils alimentaires, Sa particularité est qu'il permet aux clients de choisir un plan de repas personnalisé en fonction de leurs besoins.">
+        <meta name="description" content="Salut, je suis Jean Développeur web et mobile et designer graphiste. Je fais aussi de la photographie...">
         <!-- mots clés -->
-        <meta name="keywords"
-            content="nourriture, sain, manger, restaurant, régime alimentaire">
+        <meta name="keywords" content="jealife, HTML, CSS, JavaScript,JEaLife, Pictures">
         <meta name="author" content="JEaLiFe">
         <!-- rafraichissement de lapage -->
         <meta http-equiv="refresh" content="3000">
-        <meta property="og:site_name" content="JEaLiFe">
+        <meta property="og:site_name" content="JEaLiFe Portfolio">
         <meta property="og:type" content="website">
         <!-- image mise en avant -->
-        <meta property="og:image"
-            content="https://images.unsplash.com/photo-1568897799017-b89dfc71ebd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=857&q=80">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name='theme-color' content='#e0e5ec'> -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2HYCCDD46"></script>
+        <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <script async
-            src="https://www.googletagmanager.com/gtag/js?id=G-J2HYCCDD46"></script>
-        <title>TremT</title>
-        <link rel="icon" type="image/png" href="assets/images/Sphère TiremT.png">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  gtag('config', 'G-J2HYCCDD46');
+        </script>
+        <link rel="icon" type="image/png" href="assets/images/icons/code-regular.png">
+        <title id="title">JEaLiFe</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
-            rel="stylesheet">
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/about.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/home.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="css/styles.css">
-
     </head>
-    <body>
-
+    <body class="white">
         <header>
-            <!-- barre de navigation  -->
-            <nav class="home-nav">
+            <div class="nav">
                 <div class="logo">
-                    <a href="#">
-                        <img src="assets/images/Logo tiremt.png"
-                            alt="Logo TiremT"
-                            width="95px">
-                    </a>
+                    <img src="assets/images/JEaLiFe·Pictures.jpg" alt="Image icon">
                 </div>
-                <div class="Contact">
-                    <a href="#" class="btn-contact"> Contact</a>
+                <div class="links-container container-flex space-between">
+                    <a href="#Accueil" id="Accueil" class="txt-link nav-link">Accueil</a>
+                    <a href="#" class="txt-link nav-link">Réalisations</a>
+                    <a href="#A-propos" id="A-propos" class="txt-link nav-link">A propos</a>
                 </div>
-            </nav>
-
+            </div>
         </header>
-
         <main>
-            <!-- hero section  -->
-            <div class="hero">
-                <div class="top-hero">
-                    <div class="top-first">
-                        <h1>Discover the <br>
-                            Ultimate <span class="orange">food</span> <br>
-                            <span class="green">Experience</span></h1>
-                        <div class="btn-hero">
-                            <a class="check-menu" href="#">
-                                Check menu
-                            </a>
-                            <a class="how-order" href="#how-to-order"><i
-                                    class='bx bx-play-circle'></i>How to order</a>
-                        </div>
-                    </div>
-                    <div class="top-second">
-
-                        <div class="slideshow-container">
-
-                            <div class="mySlides slide1 fade">
-                                <img
-                                    src="https://images.unsplash.com/photo-1568897799017-b89dfc71ebd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=857&q=80"
-                                    alt>
-                                <div class="text">Caption Text</div>
-                            </div>
-
-                            <div class="mySlides slide2 fade">
-                                <img
-                                    src="https://images.unsplash.com/photo-1547496502-affa22d38842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=677&q=80"
-                                    alt>
-                                <div class="text">Caption Two</div>
-                            </div>
-
-                            <div class="mySlides slide3 fade">
-                                <img
-                                    src="https://images.unsplash.com/photo-1577594990850-e843a8e91512?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                                    alt>
-                                <div class="text">Caption Three</div>
-                            </div>
-
-                        </div>
-                        <br>
-
-                        <div style="text-align:center">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-hero">
-                    <div class="section-one">
-                        <p>
-                            Purest Food Experience <br>
-                            Focus on Premium Quality<br>
-                            Ingraedients
-                        </p>
-                        <div class="links-hero">
-                            <a href="#">Menu</a>
-                            <a href="#">Reservation</a>
-                        </div>
-                    </div>
-                    <div class="section-two">
-                        <div class="text-sec">
-                            Meet with our <br>
-                            qualified
-                        </div>
-                    </div>
-                    <div class="section-three">
-                        <div class="text-sec2">
-                            feel the taste <br>
-                            of Africa food
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <!-- horder steps section -->
-            <div class="order-steps" id="how-to-order">
-                <div class="head-steps">
-                    <h2>How To Order</h2>
-                    <span></span>
-                </div>
-                <div class="steps-container">
-                    <div class="step step-one">
-                        <img src="assets/images/Order food-pana.png" alt="Order">
-                        <p>Choose your meal</p>
-                    </div>
-                    <div class="step step-two">
-                        <img src="assets/images/Payment Information-bro.png" alt>
-                        <p>Order and pay online</p>
-                    </div>
-                    <div class="step step-three">
-                        <img src="assets/images/In no time-pana.png" alt>
-
-                        <p>Get it delivered to you!</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- about section -->
-            <div class="about">
-                <div class="image-about">
-                    <img src="assets/images/Chef-bro.png" alt>
-                </div>
-                <div class="about-description">
-                    <div class="about-title">
-                        <h2>What TiremT ?</h2>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Laboriosam repellat distinctio impedit ea ab quas
-                        cupiditate id temporibus, odit iusto vitae, quia
-                        obcaecati, delectus voluptatibus natus?
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- diet section  -->
-            <div class="diet">
-                <div class="diet-title">
-                    <h2>Diets & Nutrition Plans</h2>
-                </div>
-                <div class="diet-container">
-
-                    <div class="diet-left">
-                        <div class="diet-item Breakfasts">
-                            <div class="diet-text">
-                                <span>Breakfasts</span>
-                            </div>
-                        </div>
-                        <div class="diet-item Lunches">
-                            <div class="diet-text">
-                                <span>Lunches</span>
-                            </div>
-                        </div>
-                        <div class="diet-item Dinners">
-                            <div class="diet-text">
-                                <span>Dinners</span>
-                            </div>
-                        </div>
-                        <div class="diet-item Snacks">
-                            <div class="diet-text">
-                                <span>Snacks</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            
-            <div class="outerdiv testimonial">
-                <div class="testi-title">
-                    <h2>Testimonials</h2>
-                </div>
-  
-                <div class="innerdiv">
-                  <!-- div1 -->
-                  <div class="div1 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Daniel Clifford</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review">
-                      <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
-                    <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun!  ”</p>
-                    </div>
-                  </div>
-                  <!-- div2 -->
-                  <div class="div2 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Jonathan Walters</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review">
-                      <h4>The team was very supportive and kept me motivated</h4>
-                    <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
-                    </div>
-                  </div>
-                  <!-- div3 -->
-                  <div class="div3 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name dark">Kira Whittle</p>
-                        <p class="designation dark">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review dark">
-                      <h4>Such a life-changing experience. Highly recommended!</h4>
-                      <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint.”</p>
-                    </div>
-                  </div>
-                  <!-- div4 -->
-                  <div class="div4 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name dark">Jeanette Harmon</p>
-                        <p class="designation dark">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review dark">
-                      <h4>An overall wonderful and rewarding experience</h4>
-                    <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
-                    </div>
-                  </div>
-                  <!-- div5 -->
-                  <div class="div5 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Patrick Abrams</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review">
-                      <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
-                    <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence neces
-        </main>
-
-        <footer>
-
-        </footer>
-
-        <script>
-                let slideIndex = 0;
-                showSlides();
+            <div class="main-container " id="main-container">
+                <!-- 
                 
-                function showSlides() {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                  let dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                  setTimeout(showSlides, 9000); // Change image every 2 seconds
-                }
-                </script>
+<div class="infos-section blur infos-section-home" id="Accueil"
+    data-aos="zoom-in-up" data-aos-delay="100"
+    data-aos-duration="800" data-aos-easing="ease-in-out">
+    <div class="infos  container-flex-column">
+        <img class="me" src="assets/images/JEaLiFe·.jpg" width="185px"
+            height="185px" alt="jean Guylane Memiaghe">
+        <div class="name">
+            <h1>JEaLiFe</h1>
+        </div>
+        <span class="domains">
+            Web developper <br> Photographer
+        </span>
+        <div class="icons flex gap">
+            <a class="txt-link" href="https://github.com/jealife"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class='bx bxl-github'></i></a>
+            <a class="txt-link"
+                href="https://www.instagram.com/jealife_pictures/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class='bx bxl-instagram'></i>
+            </a>
+        </div>
 
+        <span class="email">
+            Email: <a class="txt-link"
+                href="mailto:jealife.pictures@gmail.com">Jealife.pictures@gmail.com</a>
+        </span>
+        <div class="btn-cv">
+            <a href="assets/images/JEaLiFe·.jpg" download target="_blank"
+                rel="noopener noreferrer"
+                class="txt-link">Télécharger mon CV
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="services-section blur" data-aos="zoom-in-up" data-aos-delay="100"
+data-aos-duration="800" data-aos-easing="ease-in-out">
+<div class="services-bar-title">
+    <h2 class="txt-link">Services</h2>
+</div>
+<div class="services-items"  data-aos="zoom-in-up"
+data-aos-delay="300"
+data-aos-duration="800" data-aos-easing="ease-in-out">
+    <div class="card flex  two" >
+        <div class="top-card">
+            <div class="icon">
+                <i class='bx bx-code-curly'></i>
+            </div>
+            <div class="card-title">
+                <h2 class="uppercase">Developpement Web</h2>
+            </div>
+            <div class="card-description">
+
+            </div>
+        </div>
+    </div>
+    <div class="card flex flex-column">
+        <div class="top-card">
+            <div class="icon">
+                <i class='bx bx-mobile-alt'></i>
+            </div>
+
+            <div class="card-title">
+                <h2 class="uppercase">Developpemnt Mobile</h2>
+            </div>
+
+            <div class="card-description">
+
+            </div>
+        </div>
+    </div>
+    <div class="card flex  two" >
+        <div class="top-card">
+            <div class="icon">
+                <i class='bx bx-vector'></i>
+            </div>
+            <div class="card-title">
+                <h2 class="uppercase">Création de Logo</h2>
+            </div>
+            <div class="card-description">
+
+            </div>
+        </div>
+    </div>
+    <div class="card flex flex-column" >
+        <div class="top-card">
+            <div class="icon">
+                <i class='bx bx-camera'></i>
+            </div>
+
+            <div class="card-title">
+                <h2 class="uppercase">Séance Shooting</h2>
+            </div>
+
+            <div class="card-description">
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+             --></div>
+        </main>
+        <div class="btn-white-mode">
+            <button class="btn" onclick="onchange()">
+                <input type="checkbox" id="mode" class="form-check-input">
+            </button>
+        </div>
+        <!-- Darck mode switcher -->
+        <script>
+        const modeBtn = document.getElementById('mode');
+        modeBtn.onchange = (e) => {
+            if (modeBtn.checked === true) {
+                document.documentElement.classList.remove("dark")
+                document.documentElement.classList.add("light")
+                window.localStorage.setItem('mode', 'light');
+            } else {
+                document.documentElement.classList.remove("light")
+                document.documentElement.classList.add("dark")
+                window.localStorage.setItem('mode', 'dark');
+
+            }
+        }
+        </script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+        <script>
+      $(document).ready(function () {
+        
+        //page par défaut
+        $(".main-container").load("view/home.html")
+       //$(".footer").load("footer.html")
+
+
+        $("#A-propos").click(function () {
+          $(".main-container").load("view/about.html");
+            $("#title").text("JEaLiFe | A propos");
+          $("#web-site").css("color", "white");
+          $("#Realisation").css("color", "var(--link)");
+          $("#Accueil").css("color", "var(--link)");
+          $(this).css("color", "white");
+          $(this).css("transition", "0.5s");
+  
+        });
+  
+  
+        $("#Accueil").click(function () {
+          $(".main-container").load("view/home.html")
+          $("#Realisation").css("color", "var(--link)");          
+          $("#title").text("JEaLiFe");
+          $("#A-propos").css("color", "var(--link)");
+          $(this).css("color", "white");
+          $(this).css("transition", "0.5s");
+        });
+  
+        $("#Realisation").click(function () {
+          $(".main-container").load("portfolio.html");       
+          $("#title").text("JEaLiFe | Portfolio");
+          $("#A-propos").css("color", "var(--link)");
+          $("#Accueil").css("color", "var(--link)");
+          $(this).css("color", "white");
+          $(this).css("transition", "0.5s");
+        });
+  
+      });
+        </script>
     </body>
 </html>
