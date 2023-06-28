@@ -33,7 +33,7 @@
             href="assets/images/icons/code-regular.png">
 
 
-            
+
         <title id="title">JEaLiFe</title>
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="links-container container-flex space-between">
                     <a href="#Accueil" id="Accueil" class="txt-link nav-link">Accueil</a>
-                    <a href="#" class="txt-link nav-link">Réalisations</a>
+                    <a href="#Portfolio" id="Portfolio" class="txt-link nav-link">Réalisations</a>
                     <a href="#A-propos" id="A-propos" class="txt-link nav-link">A
                         propos</a>
                 </div>
@@ -125,7 +125,7 @@
           $(this).css("transition", "0.5s");
         });
   
-        $("#Realisation").click(function () {
+        $("#Portfolio").click(function () {
           $(".main-container").load("portfolio.html");       
           $("#title").text("JEaLiFe | Portfolio");
           $("#A-propos").css("color", "var(--link)");
