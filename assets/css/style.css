@@ -515,7 +515,116 @@ main {
     overflow: hidden;
 }
 
+/* ///////////////       Portfolio ///////////////// */
+.section-work {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+    position: relative;
+    color: var(--color-white);
 
+  }
+
+  .section-work-top {
+    /* flex: 1px; */
+    text-align: center;
+  }
+
+  .filter {
+    position: relative;
+    background-color: #363636;
+    color: #ffffff;
+    display: flex;
+    width: 250px;
+    height: 180px;
+    text-align: center;
+    display: none;
+    border-radius: 0.5rem;
+  }
+
+  .filter img {
+    width: 100%;
+    object-fit: cover;
+    height: 160px;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #btnFilter {
+    transition: .5s;
+  }
+
+  .portfolio .container {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Style the buttons */
+  .btn {
+    border-radius: 2rem;
+    border: none;
+    padding: 9px 12px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+    color: var(--muted);
+  }
+
+  .btn:hover {
+    /* background-color: var(--vibrant); */
+    color: var(--vibrant-light);
+  }
+
+  .btn.active {
+    border-radius: 2rem;
+    background-color: var(--vibrant);
+    color: white;
+  }
+
+  .filter:hover .link-portfolio {
+    height: 100%;
+  }
+
+  .filter:hover img {
+    scale: 0.9;
+  }
+
+  .link-portfolio {
+    font-weight: var(--font-medium);
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    background-color: #18181860;
+    width: 100%;
+    height: 25%;
+    transition: .3s ease-in-out;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: grid;
+    place-content: center;
+    border-radius: 0.5rem;
+  }
+
+  .link-portfolio a {
+    transition: .5s;
+    color: #fff;
+
+  }
+
+  .link-portfolio a:hover {
+    color: var(--vibrant-light);
+  }
 
 /*/              Responsive //*/
 @media only screen and (min-width: 900px) {
