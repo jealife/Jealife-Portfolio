@@ -3,65 +3,58 @@
     <div class="services-bar-title">
         <h2 class="txt-link">Services</h2>
     </div>
-    <div class="services-items"  data-aos="zoom-in-up"
+
+    <div id="portfolio" class="portfolio" data-aos="zoom-in-up"
     data-aos-delay="300"
     data-aos-duration="800" data-aos-easing="ease-in-out">
-        <div class="card flex  two" >
-            <div class="top-card">
-                <div class="icon">
-                    <i class='bx bx-code-curly'></i>
-                </div>
-                <div class="card-title">
-                    <h2 class="uppercase">Developpement Web</h2>
-                </div>
-                <div class="card-description">
+        <div id="btnFilter">
+            <button class="btn active" onclick="filterSelection('all')"> Tout</button>
+            <button class="btn" onclick="filterSelection('pictures')">
+                Photographies</button>
+            <button class="btn" onclick="filterSelection('website')">Sites web</button>
+        </div>
 
+        <div class="container">
+            <div class="filter pictures">
+                <img src="assets/images/skooter Marrakech.jpg" alt>
+                <div class="link-portfolio">
+                    <a href="assets/images/skooter Marrakech.jpg" target="_blank">Quad Marrakech</a>
+                </div>
+            </div>
+            <div class="filter pictures">
+                <img src="assets/images/JEALIFE_Pictures.jpg" alt>
+                <div class="link-portfolio">
+                    <a href="assets/images/JEALIFE_Pictures.jpg" target="_blank">JEALIFE Pictures</a>
+                </div>
+            </div>
+            <div class="filter website">
+
+                <img src="assets/images/tiremt.png" alt>
+                <div class="link-portfolio">
+                    <a href="https://tirem-t.vercel.app/" target="_blank"> TiremT</a>
+                </div>
+            </div>
+
+            <div class="filter website">
+                <img src="assets/images/Jealife Portfolio.png" alt>
+                <div class="link-portfolio">
+                    <a href="https://jea-portfolio.vercel.app/" target="_blank"> JEaLiFe</a>
+                </div>
+            </div>
+            <div class="filter pictures">
+                <img src="assets/images/girl.jpg" alt>
+                <div class="link-portfolio">
+                    <a href="assets/images/girl.jpg" target="_blank">Girl</a>
+                </div>
+            </div>
+            <div class="filter website">
+                <img src="assets/images/Flexfit.png" alt>
+                <div class="link-portfolio">
+                    <a href="https://flex-fit-tau.vercel.app/" target="_blank"> FlexFit</a>
                 </div>
             </div>
         </div>
-        <div class="card flex flex-column">
-            <div class="top-card">
-                <div class="icon">
-                    <i class='bx bx-mobile-alt'></i>
-                </div>
-
-                <div class="card-title">
-                    <h2 class="uppercase">Developpemnt Mobile</h2>
-                </div>
-
-                <div class="card-description">
-
-                </div>
-            </div>
-        </div>
-        <div class="card flex  two" >
-            <div class="top-card">
-                <div class="icon">
-                    <i class='bx bx-vector'></i>
-                </div>
-                <div class="card-title">
-                    <h2 class="uppercase">Création de Logo</h2>
-                </div>
-                <div class="card-description">
-
-                </div>
-            </div>
-        </div>
-        <div class="card flex flex-column" >
-            <div class="top-card">
-                <div class="icon">
-                    <i class='bx bx-camera'></i>
-                </div>
-
-                <div class="card-title">
-                    <h2 class="uppercase">Séance Shooting</h2>
-                </div>
-
-                <div class="card-description">
-
-                </div>
-            </div>
-        </div>
+    </div>
         
     </div>
 </div>
