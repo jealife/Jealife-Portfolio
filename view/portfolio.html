@@ -1,105 +1,58 @@
-<div class="section-work blur portfolio" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="800"
-    data-aos-easing="ease-in-out">
+<div class="services-section blur " data-aos="zoom-in-up" data-aos-delay="100"
+    data-aos-duration="800" data-aos-easing="ease-in-out">
     <div class="services-bar-title">
         <h2 class="txt-link">Services</h2>
     </div>
 
+    <div id="portfolio" class="" >
+        <div id="btnFilter">
+            <button class="btn active" onclick="filterSelection('all')"> Tout</button>
+            <button class="btn" onclick="filterSelection('pictures')">
+                Photographies</button>
+            <button class="btn" onclick="filterSelection('website')">Sites web</button>
+        </div>
 
-    <div id="btnFilter">
-        <button class="btn active" onclick="filterSelection('all')"> Tout</button>
-        <button class="btn" onclick="filterSelection('pictures')">
-            Photographies</button>
-        <button class="btn" onclick="filterSelection('website')">Sites web</button>
+        <div class="container">
+            <div class="filter pictures">
+                <img src="assets/images/skooter Marrakech.jpg" alt>
+                <div class="link-portfolio">
+                    <a href="assets/images/skooter Marrakech.jpg" target="_blank">Quad Marrakech</a>
+                </div>
+            </div>
+            <div class="filter pictures">
+                <img src="assets/images/JEALIFE_Pictures.jpg" alt>
+                <div class="link-portfolio">
+                    <a href="assets/images/JEALIFE_Pictures.jpg" target="_blank">JEALIFE Pictures</a>
+                </div>
+            </div>
+            <div class="filter website">
+
+                <img src="assets/images/tiremt.png" alt>
+                <div class="link-portfolio">
+                    <a href="https://tirem-t.vercel.app/" target="_blank"> TiremT</a>
+                </div>
+            </div>
+
+            <div class="filter website">
+                <img src="assets/images/Jealife Portfolio.png" alt>
+                <div class="link-portfolio">
+                    <a href="https://jea-portfolio.vercel.app/" target="_blank"> JEaLiFe</a>
+                </div>
+            </div>
+            <div class="filter pictures">
+                <img src="assets/images/girl.jpg" alt>
+                <div class="link-portfolio">
+                    <a href="assets/images/girl.jpg" target="_blank">Girl</a>
+                </div>
+            </div>
+            <div class="filter website">
+                <img src="assets/images/Flexfit.png" alt>
+                <div class="link-portfolio">
+                    <a href="https://flex-fit-tau.vercel.app/" target="_blank"> FlexFit</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="container">
-        <div class="filter pictures">
-            <img src="assets/images/skooter Marrakech.jpg" alt>
-            <div class="link-portfolio">
-                <a href="assets/images/skooter Marrakech.jpg" target="_blank">Quad Marrakech</a>
-            </div>
-        </div>
-        <div class="filter pictures">
-            <img src="assets/images/JEALIFE_Pictures.jpg" alt>
-            <div class="link-portfolio">
-                <a href="assets/images/JEALIFE_Pictures.jpg" target="_blank">JEALIFE Pictures</a>
-            </div>
-        </div>
-        <div class="filter website">
-
-            <img src="assets/images/tiremt.png" alt>
-            <div class="link-portfolio">
-                <a href="https://tirem-t.vercel.app/" target="_blank"> TiremT</a>
-            </div>
-        </div>
-
-        <div class="filter website">
-            <img src="assets/images/Jealife Portfolio.png" alt>
-            <div class="link-portfolio">
-                <a href="https://jea-portfolio.vercel.app/" target="_blank"> JEaLiFe</a>
-            </div>
-        </div>
-        <div class="filter pictures">
-            <img src="assets/images/girl.jpg" alt>
-            <div class="link-portfolio">
-                <a href="assets/images/girl.jpg" target="_blank">Girl</a>
-            </div>
-        </div>
-        <div class="filter website">
-            <img src="assets/images/Flexfit.png" alt>
-            <div class="link-portfolio">
-                <a href="https://flex-fit-tau.vercel.app/" target="_blank"> FlexFit</a>
-            </div>
-        </div>
+        
     </div>
-
-
 </div>
-</div>
-<script>
-    filterSelection("all")
-    function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filter");
-        if (c == "all") c = "";
-        for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-    }
-
-    function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-        }
-    }
-
-    function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-        }
-        element.className = arr1.join(" ");
-    }
-
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("btnFilter");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
-
-
-
-</script>
