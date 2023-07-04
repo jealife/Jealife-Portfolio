@@ -636,6 +636,16 @@ main {
     .about-section {
         margin-top: 50px;
     }
+    
+    .filter {
+        width: 312px;
+        height: 220px;
+    }
+
+    .filter img {
+        height: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 900px) {
