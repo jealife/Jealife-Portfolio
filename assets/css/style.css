@@ -264,6 +264,7 @@ main {
     width: 100%;
     padding: 0 10px 25px;
     background: var(--image-bg);
+    min-height: 100vh;
     min-height: 100dvh;
     display: grid;
     place-items: center;
